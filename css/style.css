@@ -1,5 +1,57 @@
 /* ----- Fonts ----- */
+@font-face{
+	font-family: roboto-medium;
+	src: url('../fonts/Roboto-Medium.ttf');
+}
 
+@font-face{
+	font-family: roboto-thin;
+	src: url('../fonts/Roboto-Thin.ttf');
+}
+
+/* ----- Body ----- */
+body{
+	background-image: url('../img/silver-gradient-background.jpg');
+}
 
 /* ----- Header & Navbar ----- */
+.navbar-brand{
+	font-family: roboto-medium;
+}
 
+.nav .nav-item{
+	font-family: roboto-thin;
+	font-size: 13px;
+}
+
+.nav .nav-item a{
+	color: #fff;
+}
+
+.nav .nav-item a:hover{
+	background-color: #999999;
+}
+
+/* ----- Jumbotron ----- */
+.jumbotron{
+    background: url('../img/jumbotron-img.jpg');
+    background-size: 100%;
+    height: 600px;
+}
+
+.jumbotron h1{
+	font-family: roboto-medium;
+	font-size: 43px;
+}
+
+.jumbotron p{
+	font-family: roboto-thin;
+	font-size: 23px;
+}
+
+/* ----- Footer ----- */
+.footer p{
+	font-family: roboto-thin;
+	font-size: 13px;
+	color: #999999;
+}
