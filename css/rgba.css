@@ -1,0 +1,31 @@
+/* ----- Fonts ----- */
+@font-face{
+	font-family: roboto-medium;
+	src: url('../fonts/Roboto-Medium.ttf');
+}
+
+@font-face{
+	font-family: roboto-thin;
+	src: url('../fonts/Roboto-Thin.ttf');
+}
+
+
+/* ----- Color Picker ----- */
+.full-spectrum .sp-palette {
+max-width: 400px;
+}
+
+.rgba{
+	text-align: center;
+	border: 1px solid #ddd;
+	background: #e7e7e7;
+	padding-bottom: 40px;
+}
+
+.btn{
+	margin-top: 20px;
+}
+
+.basic-log{
+	color: green;
+}
