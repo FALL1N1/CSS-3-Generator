@@ -6,8 +6,8 @@
 		<meta name="viewport" content="width=device width, initial-scale=1">
 		<title> CSS-3 Generator </title>
 		<!-- Bootstrap -->
-		<link rel="stylesheet" href="../lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="../lib/bower_components/spectrumJs/spectrum.css">
+		<link rel="stylesheet" href="../lib/bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="../lib/bower_components/normalize-css/normalize.css">
 		<link rel="stylesheet" href="../css/style.css">
 		<link rel="stylesheet" href="../css/borderradius.css">
 	</head>
@@ -66,19 +66,44 @@
 		</header>
 		
 		<h2 class="text-center"> Border Radius </h2>
-		<div class="container borderradius">
-		<h3 class="text-center"> The border-radius property is a shorthand property for setting the four border radius properties. </h3>
 		
-		
-		</div>
-		
-		<!-- Colour picker --> 
+		<div id="container">
+			<div class="input-wrapper" id="input-wrapper-tl">
+				<input type="text" class="chars" data-bind="value: tl, valueUpdate: 'afterkeydown'">
+  			</div>
+  			
+  			<div class="input-wrapper" id="input-wrapper-tr">
+  				<input type="text" class="chars" data-bind="value: tr, valueUpdate: 'afterkeydown'">
+  			</div>
+  			
+  			<div class="input-wrapper" id="input-wrapper-br">
+  				<input type="text" class="chars" data-bind="value: br, valueUpdate: 'afterkeydown'">
+  			</div>
+  			
+  			<div class="input-wrapper" id="input-wrapper-bl">
+  				<input type="text" class="chars" data-bind="value: bl, valueUpdate: 'afterkeydown'">
+  			</div>
+
+  			<div id="result" data-bind="attr: {'style': result}">
+  			<pre>
+  				<code id="code" data-bind="text: result"></code>
+    		</pre>
+    		
+
+    <div id="options">
+      <input type="checkbox" id="chbWebkit" data-bind="checked: showWK">
+      <label for="chbWebkit"> Webkit </label>  
+      <input type="checkbox" id="chbCSS3" data-bind="checked: showCSS">
+      <label for="chbCSS3"> CSS3 (<3) </label>
+    </div>
+  </div>
+</div>
 		
 
 		
 		<script src="../lib/bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="../lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src="../lib/bower_components/spectrumJs/spectrum.js"></script>
-		<script src="../js/rgba.js"></script>
+		<script src="../lib/bower_components/knockout/dist/knockout.js"></script> 
+		<script src="../js/borderradius.js"></script>
 	</body>
 </html>

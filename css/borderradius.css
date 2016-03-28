@@ -9,14 +9,6 @@
 	src: url('../fonts/Roboto-Thin.ttf');
 }
 
-
-.borderradius{
-	text-align: center;
-	border: 1px solid #ddd;
-	background: #e7e7e7;
-	padding-bottom: 40px;
-}
-
 h2{
 	font-size: 27px;
 	font-family: roboto-medium;
@@ -26,3 +18,115 @@ h3{
 	font-size: 20px;
 	font-family: roboto-thin;
 }
+
+/* ----- Border radius box and etc ----- */
+body {
+  background: #f3f3f3;
+}
+
+
+
+#container {
+  width: 550px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#container .input-wrapper {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+}
+
+#container .input-wrapper#input-wrapper-tl {
+  top: -5px;
+  left: -85px;
+  text-align: right;
+}
+
+#container .input-wrapper#input-wrapper-tr {
+  top: -5px;
+  right: -22px;
+  text-align: left;
+}
+
+#container .input-wrapper#input-wrapper-bl {
+  bottom: -30px;
+  left: -85px;
+  text-align: right;
+}
+
+#container .input-wrapper#input-wrapper-br {
+  bottom: -30px;
+  right: -22px;
+  text-align: left;
+}
+
+#container .input-wrapper input {
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 82px;
+  padding: 2px 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  background: #3d3d3d;
+  color: #f3f3f3;
+}
+
+#container .input-wrapper#input-wrapper_tr input,
+#container .input-wrapper#input-wrapper_br input {
+  text-align: left;
+  right: auto;
+  left: 0;
+}
+
+#container .input-wrapper#input-wrapper_bl input,
+#container .input-wrapper#input-wrapper_br input {
+  top: auto;
+  bottom: -1px;
+}
+
+#container .input-wrapper input.chars { width: 20px }
+
+#container #result {
+  background: #ff8484;
+  border: 2px solid #3d3d3d;
+  padding: 20px;
+  width: 460px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+#container #result pre {
+  background: #f3f3f3;
+  border: 1px solid #a3a3a3;
+  width: 455px;
+  height: 340px;
+  font: normal 12px Monaco, 'Courier New', monospace;
+  color: #2f2f2f;
+}
+
+#container #result #options {
+  margin: 10px 0 0 0;
+}
+
+#container #result #options input {
+  margin-right: 2px;
+}
+
+#container #result #options label {
+  margin-right: 6px;
+  color: #393939;
+}
+
+#container #result #options label.last {
+  margin-right: 0;
+}
+
+
+
+
+
