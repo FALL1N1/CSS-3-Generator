@@ -50,12 +50,22 @@ body{
 	background-color: #999999;
 }
 
+h2{
+	font-family: roboto-medium;
+}
+p{
+	font-size: 20px;
+	font-family: roboto-thin;
+	margin-bottom: 25px;
+}
+
 /* ----- Footer ----- */
 .footer p{
 	font-family: roboto-thin;
 	font-size: 13px;
 	color: #999999;
 	padding-top: 15px;
+	padding-bottom: -10px;
 }
 
 
