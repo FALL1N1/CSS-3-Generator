@@ -56,3 +56,21 @@ body{
 	color: #999999;
 	padding-top: 15px;
 }
+
+.container-fluid{
+	padding-bottom: 30px;
+}
+
+/* ----- Overwrite bootstrap rules ----- */
+.nav > li > a{
+	margin-top: 17px;
+}
+
+.nav > li{
+	font-size: 30px;
+}
+
+.navbar-brand{
+	margin-top: 12px;
+}
+

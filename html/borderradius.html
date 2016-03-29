@@ -8,7 +8,6 @@
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="../lib/bower_components/bootstrap/dist/css/bootstrap.css">
 		<link rel="stylesheet" href="../lib/bower_components/normalize-css/normalize.css">
-		<link rel="stylesheet" href="../css/style.css">
 		<link rel="stylesheet" href="../css/borderradius.css">
 	</head>
 	<body>
@@ -66,7 +65,7 @@
 		</header>
 		
 		<h2 class="text-center"> Border Radius </h2>
-		
+		<div class="container-fluid">
 		<div id="container">
 			<div class="input-wrapper" id="input-wrapper-tl">
 				<input type="text" class="chars" data-bind="value: tl, valueUpdate: 'afterkeydown'">
@@ -90,17 +89,15 @@
     		</pre>
     		
 
-    <div id="options">
-      <input type="checkbox" id="chbWebkit" data-bind="checked: showWK">
-      <label for="chbWebkit"> Webkit </label>  
-      <input type="checkbox" id="chbCSS3" data-bind="checked: showCSS">
-      <label for="chbCSS3"> CSS3 (<3) </label>
-    </div>
-  </div>
-</div>
-		
-
-		
+			<div id="options">
+				<input type="checkbox" id="chbWebkit" data-bind="checked: showWK">
+				<label for="chbWebkit"> Webkit </label>  
+				<input type="checkbox" id="chbCSS3" data-bind="checked: showCSS">
+				<label for="chbCSS3"> CSS3 (<3) </label>
+				</div>
+  		</div>
+		</div>
+		</div>
 		<script src="../lib/bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="../lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="../lib/bower_components/knockout/dist/knockout.js"></script> 

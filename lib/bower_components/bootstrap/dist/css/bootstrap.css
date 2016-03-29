@@ -98,7 +98,25 @@ hr {
      -moz-box-sizing: content-box;
           box-sizing: content-box;
 }
-
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
 button {
   overflow: visible;
 }
@@ -1047,17 +1065,6 @@ th {
 .glyphicon-menu-up:before {
   content: "\e260";
 }
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
 html {
   font-size: 10px;
 
@@ -1510,7 +1517,19 @@ address {
   font-style: normal;
   line-height: 1.42857143;
 }
-
+code,
+kbd,
+pre,
+samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
 kbd {
   padding: 2px 4px;
   font-size: 90%;
@@ -1526,6 +1545,27 @@ kbd kbd {
   font-weight: bold;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
 }
 .pre-scrollable {
   max-height: 340px;
@@ -2455,7 +2495,12 @@ legend {
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
-
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 input[type="search"] {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;

@@ -18,12 +18,48 @@ h3{
 	font-size: 20px;
 	font-family: roboto-thin;
 }
-
-/* ----- Border radius box and etc ----- */
-body {
-  background: #f3f3f3;
+/* ----- Bootstrap fix navbar ----- */
+.nav > li > a{
+	margin-top: 17px;
 }
 
+.navbar-brand{
+	margin-top: 12px;
+}
+
+/* ----- Body ----- */
+body{
+	background-image: url('../img/silver-gradient-background.jpg');
+}
+
+/* ----- Header & Navbar ----- */
+.navbar-brand{
+	font-family: roboto-medium;
+}
+
+.nav .nav-item{
+	font-family: roboto-thin;
+	font-size: 13px;
+}
+
+.nav .nav-item a{
+	color: #fff;
+}
+
+.nav .nav-item a:hover{
+	background-color: #999999;
+}
+
+/* ----- Footer ----- */
+.footer p{
+	font-family: roboto-thin;
+	font-size: 13px;
+	color: #999999;
+	padding-top: 15px;
+}
+
+
+/* ----- Main Stuff (border radius tool) ----- */
 
 
 #container {
@@ -92,9 +128,10 @@ body {
 #container .input-wrapper input.chars { width: 20px }
 
 #container #result {
-  background: #ff8484;
+  background: brown;
   border: 2px solid #3d3d3d;
   padding: 20px;
+  padding-right: 34px;
   width: 460px;
   margin: 0 auto;
   margin-bottom: 100px;
@@ -119,14 +156,11 @@ body {
 
 #container #result #options label {
   margin-right: 6px;
-  color: #393939;
+  color: #fff;
+  font-size: 10px;
+  font-family: roboto-thin;
 }
 
 #container #result #options label.last {
   margin-right: 0;
 }
-
-
-
-
-
