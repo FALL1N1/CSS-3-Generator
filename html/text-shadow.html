@@ -6,12 +6,18 @@
 		<meta name="viewport" content="width=device width, initial-scale=1">
 		<title> CSS-3 Generator </title>
 		<!-- Bootstrap -->
-		<link rel="stylesheet" href="../lib/bower_components/material/style.css">
-		<link rel="stylesheet" href="../lib/bower_components/angular-color-picker/dist/angularjs-color-picker.min.css">
+		<link rel="stylesheet" href="../lib/bower_components/text-shadow/material.min.css">
 		<link rel="stylesheet" href="../lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/text-shadow.css">
+		
+		<script src="../lib/bower_components/text-shadow/angular.min.js"></script>
+		<script src="../lib/bower_components/text-shadow/material.min.js"></script>
+		<script src="../lib/bower_components/text-shadow/tinycolor.min.js"></script>
+		<script src="../lib/bower_components/text-shadow/angularjs-color-picker.min.js"></script>
+		<script src="../js/text-shadow.js"></script>
 	</head>
-	<body>
+	<body ng-app="textShadowMaker" ng-controller="AppCtrl">
 		<header>
 			<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
 				<div class="container-fluid">
@@ -65,32 +71,60 @@
 			</nav>
 		</header>
 		
-		
-		<div class="">
-			
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <div class="mdl-layout__drawer">
+      <h1 class="mdl-layout-title">Text Shadow Maker</h1>
+      
+      <div class="mdl-grid input-wrapper">
+        <div class="mdl-cell mdl-cell--1-col">
+          <label> Horizontal </label>
+        </div>
+        <div class="mdl-cell mdl-cell--11-col">
+	        <br>
+          <input ng-model="horizontal" min="-100" max="100" class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" />
+        </div>
+      </div>
+
+      <div class="mdl-grid input-wrapper">
+        <div class="mdl-cell mdl-cell--1-col">
+          <label> Vertical </label>
+        </div>
+        <div class="mdl-cell mdl-cell--11-col">
+	        <br>
+          <input ng-model="vertical" min="-100" max="100" class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" />
+        </div>
+      </div>      
+
+      <div class="mdl-grid input-wrapper">
+        <div class="mdl-cell mdl-cell--1-col">
+          <label>Blur</label>
+        </div>
+        <div class="mdl-cell mdl-cell--11-col">
+	        <br>
+          <input ng-model="blur" min="0" class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" />
+        </div>
+      </div>      
+
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <h1 class="sample" contenteditable style="text-shadow: {{vertical}}px {{horizontal}}px {{blur}}px {{myColor}};">Text Shadow</h1>
+
+        <div class="code-area-container">
+          <div class="code-area">
+            <span class="token-property"> Text shadow </span>: {{vertical}}px {{horizontal}}px {{blur}}px {{myColor}};
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+	<div class="navbar navbar-default navbar-fixed-bottom footer">
+		<div class="container">
+				<p class="text-center"> Copyright © 2016 · All Rights Reserved · Simeon Momchil Atanas Linda  </p> 
 		</div>
-		
-		
-			
-			<div class="navbar navbar-default navbar-fixed-bottom footer">
-				<div class="container">
-					<p class="text-center"> Copyright © 2016 · All Rights Reserved · Simeon Momchil Atanas Linda  </p> 
-				</div>
-			</div>
-		
-		
-		
-		
-		
-		
-		
-		<script src="../lib/bower_components/angular/angular.min.js"></script>
-		<script src="../lib/bower_components/material/js/material.js"></script>
-		<script src="../lib/bower_components/tinycolor/tinycolor.js"></script>
-		<script src="../lib/bower_components/angular-color-picker/dist/angularjs-color-picker.js"></script>
-		<script src="../js/text-shadow.js"></script>
-		<script src="../lib/bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="../lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src="../js/script.js"></script>
+	</div>
+	
 	</body>
 </html>
