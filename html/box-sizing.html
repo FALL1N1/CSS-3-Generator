@@ -7,9 +7,8 @@
 		<title> CSS-3 Generator </title>
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="../lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="../lib/bower_components/spectrumJs/spectrum.css">
 		<link rel="stylesheet" href="../css/style.css">
-		<link rel="stylesheet" href="../css/rgba.css">
+		<link rel="stylesheet" href="../css/box-sizing.css">
 	</head>
 	<body>
 		<header>
@@ -65,26 +64,35 @@
 			</nav>
 		</header>
 		
-		<h2 class="text-center"> RGB </h2>
-		<div class="container rgba">
-		<h3> Pick your color. </h3>
-		<input type='text' class="basic"/>
-		<em id='basic-log'></em>
-		<br>
-		<button class="btn btn-warning"> Save Color </button>
+		<div class="box-resize">
+		<h2 class="text-center"> Box resize </h2>
+		<p> The box-sizing property is used to tell the browser what the sizing properties (width and height) should include. </p>
+		<div class="container box-size">
+			<h3 class="text-center"> Choose box size. </h3>
+			<select id="dropPurpose" name="vals">
+				<option value="border-box">Border Box</option>
+				<option value="content-box">Content Box</option>
+			</select>		
+			
+			<div class="input-area"> -moz-box-sizing: <span class="printVal"> border-box </span>;</b> <br> -webkit-box-sizing: <span class="printVal"> border-box </span>;</b> <br> box-sizing: <span class="printVal"> border-box </span>;</b>
+			</div>
 		</div>
 		
-		<!-- Colour picker --> 
-		
 		<div class="navbar navbar-default navbar-fixed-bottom footer">
-				<div class="container">
-					<p class="text-center"> Copyright © 2016 · All Rights Reserved · Simeon Momchil Atanas Linda  </p> 
-				</div>
+			<div class="container">
+				<p class="text-center"> Copyright © 2016 · All Rights Reserved · Simeon Momchil Atanas Linda  </p> 
 			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
 		
 		<script src="../lib/bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="../lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src="../lib/bower_components/spectrumJs/spectrum.js"></script>
-		<script src="../js/rgba.js"></script>
+		<script src="../js/box-sizing.js"></script>
 	</body>
 </html>
