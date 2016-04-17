@@ -1,0 +1,29 @@
+@font-face{
+	font-family: roboto-medium;
+	src: url('../fonts/Roboto-Medium.ttf');
+}
+
+@font-face{
+	font-family: roboto-thin;
+	src: url('../fonts/Roboto-Thin.ttf');
+}
+
+.box-resize{
+	text-align: center;
+    border: 1px solid #ddd;
+    background: #e7e7e7;
+    padding-bottom: 40px;
+}
+
+h2{
+	font-family: roboto-medium;
+}
+
+h3{
+	font-family: roboto-thin;
+}
+
+.input-area{
+	font-family:roboto-thin;
+	margin-top: 15px;
+}
