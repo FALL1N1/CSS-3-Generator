@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device width, initial-scale=1">
+		<title> CSS-3 Generator </title>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="../lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/columns.css">
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-coll">
+						<span class="sr-only"> Toggle navigation </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span> 
+						</button>
+						<a class="navbar-brand" href="#"> CSS-3 Generator </a>
+					</div>
+					<div class="collapse navbar-collapse navbar-right" id="nav-coll">
+					<ul class="nav nav-pills">
+						<li class="nav-item" role="presentation">
+						<a href="index.html"> Home <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="rgb.html"> RGB <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="borderradius.html"> Border radius <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="text-shadow.html"> Text Shadow <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="fontface.html"> Font face <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="#"> Multiple Columns <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="box-resize.html"> Box resize <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="box-sizing.html"> Box sizing <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="#"> Outline <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="#"> Transition <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="#"> Transform <span class="sr-only"></span></a>
+						</li>
+					</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="box-resize">
+			<form  method="get">
+			<h2>I want 
+			<input class="numcolum first" value="4" maxlength="1" type="text" /> columns with a gap of <input name="" class="colgap" value="10" maxlength="2" type="text" />px and a rule of <input name="" class="colrule first" value="0" maxlength="1" type="text" />px thick</h2>
+			</form>
+			
+			<div class="box preview left">
+			<div class="columns">
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+				Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, 
+				rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
+				Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque 
+				rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper 
+				libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero 
+				venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget 
+				bibendum sodales, augue velit cursus nunc</p>
+			</div>
+
+			</div>
+
+
+
+
+			<div class="box css right">
+			<h1 class="left">CSS</h1>
+			<span class="clear"></span>
+			<pre class="css_preview">
+				.columns{
+				-webkit-column-count: <span class="colcount">4</span>;
+				-webkit-column-gap: <span class="colgap">10</span>px; 
+				-webkit-column-rule: <span class="colrulepix">0</span>px dotted black;
+				-moz-column-count: <span class="colcount">4</span>;
+				-moz-column-gap: <span class="colgap">10</span>px;  
+				-moz-column-rule: <span class="colrulepix">0</span>px dotted black;
+				column-count: <span class="colcount">4</span>;
+				column-gap: <span class="colgap">10</span>px; 
+				column-rule: <span class="colrulepix">0</span>px dotted black;
+				}
+			</pre>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+		
+		<div class="navbar navbar-default navbar-fixed-bottom footer">
+			<div class="container">
+				<p class="text-center"> Copyright © 2016 · All Rights Reserved · Simeon Momchil Atanas Linda  </p> 
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		<script src="../lib/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../js/columns.js"></script>
+		<script src="../lib/bower_components/jquery.zclip.js"></script>
+	</body>
+</html>
