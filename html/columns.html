@@ -67,7 +67,7 @@
 		<div class="box-resize">
 			<form  method="get">
 			<h2>I want 
-			<input class="numcolum first" value="4" maxlength="1" type="text" /> columns with a gap of <input name="" class="colgap" value="10" maxlength="2" type="text" />px and a rule of <input name="" class="colrule first" value="0" maxlength="1" type="text" />px thick</h2>
+			<input class="numcolum first" value="4" maxlength="1" type="text" /> columns with a gap of <input name="" class="colgap" value="5" maxlength="2" type="text" />px and a rule of <input name="" class="colrule first" value="0" maxlength="1" type="text" />px thick</h2>
 			</form>
 			
 			<div class="box preview left">
@@ -88,24 +88,18 @@
 
 
 			<div class="box css right">
-			<h1 class="left">CSS</h1>
-			<span class="clear"></span>
-			<pre class="css_preview">
-				.columns{
-				-webkit-column-count: <span class="colcount">4</span>;
-				-webkit-column-gap: <span class="colgap">10</span>px; 
-				-webkit-column-rule: <span class="colrulepix">0</span>px dotted black;
-				-moz-column-count: <span class="colcount">4</span>;
-				-moz-column-gap: <span class="colgap">10</span>px;  
-				-moz-column-rule: <span class="colrulepix">0</span>px dotted black;
-				column-count: <span class="colcount">4</span>;
-				column-gap: <span class="colgap">10</span>px; 
-				column-rule: <span class="colrulepix">0</span>px dotted black;
-				}
-			</pre>
+				<span id="txt">.columns{<br>
+				-webkit-column-count: <span class="colcount">4</span>;<br>
+				-webkit-column-gap: <span class="colgap">10</span>px;<br>
+				-webkit-column-rule: <span class="colrulepix">0</span>px dotted black;<br>
+				-moz-column-count: <span class="colcount">4</span>;<br>
+				-moz-column-gap: <span class="colgap">10</span>px;<br>
+				-moz-column-rule: <span class="colrulepix">0</span>px dotted black;<br>
+				column-count: <span class="colcount">4</span>;<br>
+				column-gap: <span class="colgap">10</span>px;<br>
+				column-rule: <span class="colrulepix">0</span>px dotted black;<br>
+				}</span>
 			</div>
-
-			<div class="clear"></div>
 		</div>
 		
 		<div class="navbar navbar-default navbar-fixed-bottom footer">
