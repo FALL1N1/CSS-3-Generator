@@ -49,8 +49,10 @@ body{
 
 .right{
 	float: right;
-	padding-left: 125px;
+	padding-left: 105px;
 	padding-top: 15px;
+	font-size: 16px;
+	line-height: 25px;
 }
 
 .columns{
