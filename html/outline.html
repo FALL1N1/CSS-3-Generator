@@ -7,8 +7,9 @@
 		<title> CSS-3 Generator </title>
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="../lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../lib/bower_components/spectrumJs/spectrum.css">
 		<link rel="stylesheet" href="../css/style.css">
-		<link rel="stylesheet" href="../css/fontface.css">
+		<link rel="stylesheet" href="../css/outline.css">
 	</head>
 	<body>
 		<header>
@@ -65,18 +66,27 @@
 		</header>
 		
 		<div class="cntr">
-		<h2 class="text-center"> Font Face </h2>
-		<p> With the @font-face rule, web designers do no longer have to use one of the "web-safe" fonts.<br>
-In the new @font-face rule you must first define a name for the font (e.g. myFirstFont), and then point to the font file. </p>
+		<h2 class="text-center"> Outline </h2>
+		<p> An outline is a line drawn around an element - outside the border. This can be use to make an element "stand out".
+			The CSS outline properties specify the style, color, and width of an outline. </p>
 		<div class="container">
-			<p>Font Family: <input data-bind='value: family' /></p> 
-			<p>Font Name: <input data-bind='value: namee' /></p> 
-			@font-face {
-			font-family: "<span data-bind='text: family'> </span>";<br>
-			src: url("<span data-bind='text: namee'> </span>") format("eot"),<br>
-			url("<span data-bind='text: namee'> </span>") format("woff"),<br>
-			url("<span data-bind='text: namee'> </span>") format("truetype");<br>
-			} 
+			<p>Outline Thickness: <input data-bind='value: thickness' /> px</p>
+			<p>Outline Color: <input type='text' class="basic"/> <em id='basic-log'></em>
+			<br>
+			<select id="dropPurpose" name="vals">
+				<option value="dotted">Dotted</option>
+				<option value="dashed">Dashed</option>
+				<option value="solid">Solid</option>
+				<option value="groove">Groove</option>
+				<option value="ridge">Ridge</option>
+				<option value="inset">Inset</option>
+				<option value="outset">Outset</option>
+				<option value="double">Double</option>
+				<option value="auto">Auto</option>
+			</select>		
+			<p>Outline Offset: <input data-bind='value: namee' /></p> 
+			outline: "<span data-bind='text: thickness'> </span>px, <span id="printVal"> dotted</span>";<br>
+			outline-offset: "<span data-bind='text: namee'> </span>";<br>
 		</div>
 		
 		<div class="navbar navbar-default navbar-fixed-bottom footer">
@@ -86,15 +96,10 @@ In the new @font-face rule you must first define a name for the font (e.g. myFir
 		</div>
 		</div>
 		
-		
-		
-		
-		
-		
-		
 		<script src="../lib/bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="../lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../lib/bower_components/spectrumJs/spectrum.js"></script>
 		<script src="../lib/bower_components/knockout/dist/knockout.js"></script>
-		<script src="../js/fontface.js"></script>
+		<script src="../js/outline.js"></script>
 	</body>
 </html>
