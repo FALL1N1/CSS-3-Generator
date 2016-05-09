@@ -73,11 +73,11 @@
 			<p>Property: </p>
 				<select id="dropPurpose" name="vals">
 				<option value="All">All</option>
-				<option value="d">Background</option>
-				<option value="solid">Color</option>
-				<option value="groove">Height</option>
-				<option value="ridge">Width</option>
-				<option value="inset">Outline</option>
+				<option value="Background">Background</option>
+				<option value="Color">Color</option>
+				<option value="Height">Height</option>
+				<option value="Width">Width</option>
+				<option value="Outline">Outline</option>
 			</select>
 			<br>	
 			<p>Duration: <input data-bind='value: namee' /></p>	
@@ -95,12 +95,12 @@
 
 			<br>
 			
-			-webkit-transition: all 2ms ease-in;<br>
+			-webkit-transition: <span data-bind='text: thickness'> </span><span id="printVal"> All</span> 2ms ease-in;<br>
 			-moz-transition: all 2ms ease-in;<br>
 			-ms-transition: all 2ms ease-in;<br>
 			-o-transition: all 2ms ease-in;<br>
 			transition: all 2ms ease-in;<br>
-			<span data-bind='text: thickness'> </span>px, <span id="printVal"> dotted</span>";<br>
+			<span data-bind='text: thickness'> </span><span id="printVal"> All</span><br>
 			<span data-bind='text: namee'> </span>";<br>
 		</div>
 		
