@@ -6,18 +6,12 @@
 		<meta name="viewport" content="width=device width, initial-scale=1">
 		<title> CSS-3 Generator </title>
 		<!-- Bootstrap -->
-		<link rel="stylesheet" href="../lib/bower_components/text-shadow/material.min.css">
 		<link rel="stylesheet" href="../lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../lib/bower_components/spectrumJs/spectrum.css">
 		<link rel="stylesheet" href="../css/style.css">
-		<link rel="stylesheet" href="../css/text-shadow.css">
-		
-		<script src="../lib/bower_components/text-shadow/angular.min.js"></script>
-		<script src="../lib/bower_components/text-shadow/material.min.js"></script>
-		<script src="../lib/bower_components/text-shadow/tinycolor.min.js"></script>
-		<script src="../lib/bower_components/text-shadow/angularjs-color-picker.min.js"></script>
-		<script src="../js/text-shadow.js"></script>
+		<link rel="stylesheet" href="../css/outline.css">
 	</head>
-	<body ng-app="textShadowMaker" ng-controller="AppCtrl">
+	<body>
 		<header>
 			<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
 				<div class="container-fluid">
@@ -71,60 +65,55 @@
 			</nav>
 		</header>
 		
-		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-    <div class="mdl-layout__drawer">
-      <h1 class="mdl-layout-title">Text Shadow Maker</h1>
-      
-      <div class="mdl-grid input-wrapper">
-        <div class="mdl-cell mdl-cell--1-col">
-          <label> Horizontal </label>
-        </div>
-        <div class="mdl-cell mdl-cell--11-col">
-	        <br>
-          <input ng-model="horizontal" min="-100" max="100" class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" />
-        </div>
-      </div>
-
-      <div class="mdl-grid input-wrapper">
-        <div class="mdl-cell mdl-cell--1-col">
-          <label> Vertical </label>
-        </div>
-        <div class="mdl-cell mdl-cell--11-col">
-	        <br>
-          <input ng-model="vertical" min="-100" max="100" class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" />
-        </div>
-      </div>      
-
-      <div class="mdl-grid input-wrapper">
-        <div class="mdl-cell mdl-cell--1-col">
-          <label>Blur</label>
-        </div>
-        <div class="mdl-cell mdl-cell--11-col">
-	        <br>
-          <input ng-model="blur" min="0" class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0" />
-        </div>
-      </div>      
-
-    </div>
-    <main class="mdl-layout__content">
-      <div class="page-content">
-        <h1 class="sample" contenteditable style="text-shadow: {{vertical}}px {{horizontal}}px {{blur}}px {{myColor}};">Text Shadow</h1>
-
-        <div class="code-area-container">
-          <div class="code-area">
-            <span class="token-property"> text-shadow </span>: {{vertical}}px {{horizontal}}px {{blur}}px {{myColor}};
-          </div>
-        </div>
-
-      </div>
-    </main>
-  </div>
-
-	<div class="navbar navbar-default navbar-fixed-bottom footer">
+		<div class="cntr">
+		<h2 class="text-center"> Outline </h2>
+		<p> CSS3 transitions allows you to change property values smoothly (from one value to another), over a given duration.
+		</p>
 		<div class="container">
-				<p class="text-center"> Copyright © 2016 · All Rights Reserved · Simeon Momchil Atanas Linda  </p> 
+			<p>Property: </p>
+				<select id="dropPurpose" name="vals">
+				<option value="All">All</option>
+				<option value="d">Background</option>
+				<option value="solid">Color</option>
+				<option value="groove">Height</option>
+				<option value="ridge">Width</option>
+				<option value="inset">Outline</option>
+			</select>
+			<br>	
+			<p>Duration: <input data-bind='value: namee' /></p>	
+			<select id="dropPurpose" name="vals">
+				<option value="dotted">Milliseconds</option>
+				<option value="dashed">Seconds</option>
+			</select>
+			<br>
+			<select id="dropPurpose" name="vals">
+				<option value="dotted">Ease</option>
+				<option value="dashed">Linear</option>
+				<option value="dashed">Ease-In</option>
+				<option value="dashed">Ease-Out</option>
+			</select>
+
+			<br>
+			
+			-webkit-transition: all 2ms ease-in;<br>
+			-moz-transition: all 2ms ease-in;<br>
+			-ms-transition: all 2ms ease-in;<br>
+			-o-transition: all 2ms ease-in;<br>
+			transition: all 2ms ease-in;<br>
+			<span data-bind='text: thickness'> </span>px, <span id="printVal"> dotted</span>";<br>
+			<span data-bind='text: namee'> </span>";<br>
 		</div>
-	</div>
-	
+		
+		<div class="navbar navbar-default navbar-fixed-bottom footer">
+			<div class="container">
+				<p class="text-center"> Copyright © 2016 · All Rights Reserved · Simeon Momchil Atanas Linda  </p> 
+			</div>
+		</div>
+		</div>
+		
+		<script src="../lib/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../lib/bower_components/knockout/dist/knockout.js"></script>
+		<script src="../js/outline.js"></script>
 	</body>
 </html>
