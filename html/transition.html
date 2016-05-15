@@ -81,27 +81,15 @@
 			</select>
 			<br>	
 			<p>Duration: <input data-bind='value: namee' /></p>	
-			<select id="dropPurpose" name="vals">
-				<option value="dotted">Milliseconds</option>
-				<option value="dashed">Seconds</option>
-			</select>
-			<br>
-			<select id="dropPurpose" name="vals">
-				<option value="dotted">Ease</option>
-				<option value="dashed">Linear</option>
-				<option value="dashed">Ease-In</option>
-				<option value="dashed">Ease-Out</option>
-			</select>
 
 			<br>
 			
-			-webkit-transition: <span data-bind='text: thickness'> </span><span id="printVal"> All</span> 2ms ease-in;<br>
-			-moz-transition: <span data-bind='text: thickness'> </span><span id="printVal"> All</span> 2ms ease-in;<br>
-			-ms-transition: <span data-bind='text: thickness'> </span><span id="printVal"> All</span> 2ms ease-in;<br>
-			-o-transition: <span data-bind='text: thickness'> </span><span id="printVal"> All</span> 2ms ease-in;<br>
-			transition: <span data-bind='text: thickness'> </span><span id="printVal"> All</span> 2ms ease-in;<br>
-			<span data-bind='text: thickness'> </span><span id="printVal"> All</span><br>
-			<span data-bind='text: namee'> </span>";<br>
+			-webkit-transition: <span data-bind='text: thickness'> </span><span class="printVal"> All</span> <span data-bind='text: namee'> </span> ms ease-in;<br>
+			-moz-transition: <span data-bind='text: thickness'> </span><span class="printVal"> All</span> <span data-bind='text: namee'> </span> ms ease-in;<br>
+			-ms-transition: <span data-bind='text: thickness'> </span><span class="printVal"> All</span> <span data-bind='text: namee'> </span> ms ease-in;<br>
+			-o-transition: <span data-bind='text: thickness'> </span><span class="printVal"> All</span> <span data-bind='text: namee'> </span> ms ease-in;<br>
+			transition: <span data-bind='text: thickness'> </span><span class="printVal"> All</span> <span data-bind='text: namee'> </span> ms ease-in;<br>
+		
 		</div>
 		
 		<div class="navbar navbar-default navbar-fixed-bottom footer">
@@ -114,6 +102,6 @@
 		<script src="../lib/bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="../lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="../lib/bower_components/knockout/dist/knockout.js"></script>
-		<script src="../js/outline.js"></script>
+		<script src="../js/transition.js"></script>
 	</body>
 </html>

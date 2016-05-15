@@ -25,5 +25,5 @@ $(".basic").spectrum({
 });
 $("#dropPurpose").change(function(){
 	var option = $(this).find('option:selected').val();
-	$("#printVal").text($(this).val());
+	$(".printVal").text($(this).val());
 	});
