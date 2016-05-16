@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device width, initial-scale=1">
+		<title> CSS-3 Generator </title>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="../lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../lib/bower_components/spectrumJs/spectrum.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/outline.css">
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-coll">
+						<span class="sr-only"> Toggle navigation </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span> 
+						</button>
+						<a class="navbar-brand" href="#"> CSS-3 Generator </a>
+					</div>
+					<div class="collapse navbar-collapse navbar-right" id="nav-coll">
+					<ul class="nav nav-pills">
+						<li class="nav-item" role="presentation">
+						<a href="index.html"> Home <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="rgb.html"> RGB <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="borderradius.html"> Border radius <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="text-shadow.html"> Text Shadow <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="fontface.html"> Font face <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="columns.html"> Multiple Columns <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="box-resize.html"> Box resize <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="box-sizing.html"> Box sizing <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="outline.html"> Outline <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="transition.html"> Transition <span class="sr-only"></span></a>
+						</li>
+						<li class="nav-item" role="presentation">
+						<a href="#"> Transform <span class="sr-only"></span></a>
+						</li>
+					</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="cntr">
+		<h2 class="text-center"> Transform </h2>
+		<p> The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements. </p>
+		<div class="container">
+			<p>Scale: <input data-bind='value: thickness' /> deg</p>
+			<br>		
+			<p>Rotate: <input data-bind='value: namee' /></p> 
+			-moz-transform: scale <span data-bind='text: thickness'></span><span id="printVal"></span> rotate <span data-bind='text: namee'> </span> deg; <br>
+			-webkit-transform: scale <span data-bind='text: thickness'></span><span id="printVal"></span> rotate <span data-bind='text: namee'> </span> deg; <br>
+			-o-transform: scale <span data-bind='text: thickness'></span><span id="printVal"></span> rotate <span data-bind='text: namee'> </span> deg; <br>
+			-ms-transform: scale <span data-bind='text: thickness'></span><span id="printVal"></span> rotate <span data-bind='text: namee'> </span> deg; <br>
+			transform: scale <span data-bind='text: thickness'></span><span id="printVal"></span> rotate <span data-bind='text: namee'> </span> deg; 
+		</div>
+		
+		<div class="navbar navbar-default navbar-fixed-bottom footer">
+			<div class="container">
+				<p class="text-center"> Copyright © 2016 · All Rights Reserved · Simeon Momchil Atanas Linda  </p> 
+			</div>
+		</div>
+		</div>
+		
+		<script src="../lib/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../lib/bower_components/spectrumJs/spectrum.js"></script>
+		<script src="../lib/bower_components/knockout/dist/knockout.js"></script>
+		<script src="../js/transform.js"></script>
+	</body>
+</html>
